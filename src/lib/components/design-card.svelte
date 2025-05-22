@@ -6,8 +6,12 @@
 
 <div class="overflow-hidden rounded-xl bg-white shadow-md transition hover:shadow-lg">
 	<div class="flex aspect-video items-center justify-center bg-gray-200 p-4">
-		{#if design.pictures[0]}
+		<!-- {#if design.pictures[0]}
 			<img src={design.pictures[0]} alt={design.name} />
+		{/if} -->
+
+		{#if design.downloads[0]}
+			<img class="size-full object-contain" src={design.downloads[0].url} alt={design.name} />
 		{/if}
 	</div>
 

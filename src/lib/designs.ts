@@ -28,5 +28,19 @@ export const designs: Design[] = [
 			}
 		],
 		pictures: []
+	},
+	{
+		id: 'css-is-awesome',
+		name: 'CSS is awesome',
+		summary: 'Everyone loves CSS',
+		description: '',
+		categories: ['CSS'],
+		downloads: [
+			{
+				name: 'svg',
+				url: '/css-is-awesome.svg'
+			}
+		],
+		pictures: []
 	}
 ];

@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.design.name} | Open Apparel</title>
+	<title>{data.design.name}</title>
 </svelte:head>
 
 <Navigation />
