@@ -14,5 +14,19 @@ export const designs: Design[] = [
 			}
 		],
 		pictures: []
+	},
+	{
+		id: 'no-comment',
+		name: '/* no comment */',
+		summary: 'No words needed',
+		description: '',
+		categories: ['Programming'],
+		downloads: [
+			{
+				name: 'svg',
+				url: '/no-comment.svg'
+			}
+		],
+		pictures: []
 	}
 ];
