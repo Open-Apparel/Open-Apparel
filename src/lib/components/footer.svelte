@@ -45,10 +45,11 @@
 			<p class="text-gray-400">
 				© {new Date().getFullYear()} Open Apparel. All designs released under MIT license.
 			</p>
-			<div class="mt-4 flex space-x-6 text-gray-400 md:mt-0">
+
+			<!-- <div class="mt-4 flex space-x-6 text-gray-400 md:mt-0">
 				<a href="#" class="transition hover:text-white">Privacy Policy</a>
 				<a href="#" class="transition hover:text-white">Terms of Use</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </footer>

@@ -53,7 +53,7 @@
 			<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
 				<div class="flex flex-col gap-4 text-center">
 					<div
-						class="mx-auto flex aspect-square w-full items-center justify-center rounded-lg bg-white shadow-sm"
+						class="mx-auto flex aspect-square w-full items-center justify-center rounded-2xl bg-white shadow-md"
 					>
 						<span class="text-4xl text-gray-600">
 							<ShirtIcon />
@@ -65,7 +65,7 @@
 
 				<div class="flex flex-col gap-4 text-center">
 					<div
-						class="mx-auto flex aspect-square w-full items-center justify-center rounded-lg bg-white shadow-sm"
+						class="mx-auto flex aspect-square w-full items-center justify-center rounded-2xl bg-white shadow-md"
 					>
 						<span class="text-4xl text-gray-600">
 							<ScissorsIcon />
@@ -77,7 +77,7 @@
 
 				<div class="flex flex-col gap-4 text-center">
 					<div
-						class="mx-auto flex aspect-square w-full items-center justify-center rounded-lg bg-white shadow-sm"
+						class="mx-auto flex aspect-square w-full items-center justify-center rounded-2xl bg-white shadow-md"
 					>
 						<span class="text-4xl text-gray-600">
 							<DesktopIcon />
@@ -89,7 +89,7 @@
 
 				<div class="flex flex-col gap-4 text-center">
 					<div
-						class="mx-auto flex aspect-square w-full items-center justify-center rounded-lg bg-white shadow-sm"
+						class="mx-auto flex aspect-square w-full items-center justify-center rounded-2xl bg-white shadow-md"
 					>
 						<span class="text-4xl text-gray-600">
 							<PrintIcon />
