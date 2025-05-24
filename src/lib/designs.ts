@@ -42,5 +42,19 @@ export const designs: Design[] = [
 			}
 		],
 		pictures: []
+	},
+	{
+		id: 'head-body',
+		name: 'Head and body',
+		summary: "HTML's Limbs",
+		description: '',
+		categories: ['HTML'],
+		downloads: [
+			{
+				name: 'svg',
+				url: '/head-body.svg'
+			}
+		],
+		pictures: []
 	}
 ];
