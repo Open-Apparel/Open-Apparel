@@ -56,5 +56,19 @@ export const designs: Design[] = [
 			}
 		],
 		pictures: []
+	},
+	{
+		id: 'rm-rf',
+		name: 'rm -rf',
+		summary: 'Delete everything',
+		description: '',
+		categories: ['Linux'],
+		downloads: [
+			{
+				name: 'svg',
+				url: '/rm-rf.svg'
+			}
+		],
+		pictures: []
 	}
 ];
