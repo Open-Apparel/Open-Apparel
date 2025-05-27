@@ -70,5 +70,19 @@ export const designs: Design[] = [
 			}
 		],
 		pictures: []
+	},
+	{
+		id: 'i-unicode',
+		name: 'I � unicode',
+		summary: 'How ironic..',
+		description: '',
+		categories: ['Unicode'],
+		downloads: [
+			{
+				name: 'svg',
+				url: '/i-unicode.svg'
+			}
+		],
+		pictures: []
 	}
 ];
