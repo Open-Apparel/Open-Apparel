@@ -22,7 +22,7 @@ COPY --from=builder /usr/src/app/build ./build
 RUN apt update && apt install curl -y
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:3000 || exit 1
 
-LABEL org.opencontainers.image.source=https://github.com/borisnliscool/boris-foo
+LABEL org.opencontainers.image.source=https://github.com/open-apparel/open-apparel
 
 USER bun
 EXPOSE 3000/tcp
