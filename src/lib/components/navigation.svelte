@@ -22,6 +22,7 @@
 				href="https://github.com/open-apparel"
 				class="text-gray-700 transition hover:text-indigo-600"
 				target="_blank"
+				aria-label="GitHub Repository"
 			>
 				<GitHubLogo />
 			</a>

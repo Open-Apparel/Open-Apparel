@@ -11,6 +11,14 @@
 	let { children } = $props();
 </script>
 
+<svelte:head>
+	<meta
+		name="description"
+		content="Open Apparel is a free and open-source library of SVG designs for t-shirts and clothing that you can freely use to create custom apparel."
+	/>
+	<meta name="theme-color" content="#9810fa" />
+</svelte:head>
+
 <main class="flex h-full min-h-dvh flex-col justify-between">
 	<div>
 		<Navigation />
