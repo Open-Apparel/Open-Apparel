@@ -5,11 +5,12 @@ export const designs: Design[] = [
 		id: 'touch-grass',
 		name: '>touch grass',
 		summary: 'Internet culture × Linux enjoyers',
-		description: '',
+		description:
+			"Ah, the classic 'touch grass' command - the internet's favorite prescription for terminal addicts! But let's be real, why would you want to touch actual grass when you can just create empty files named after it? This design perfectly captures the Linux user's dilemma: go outside and experience nature, or stay indoors creating symbolic links to nowhere. Warning: May cause sudden urges to chmod your lawn or grep through garden plants.",
 		categories: ['Linux'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'touch-grass.svg',
 				url: '/touch-grass.svg'
 			}
 		],
@@ -19,11 +20,12 @@ export const designs: Design[] = [
 		id: 'no-comment',
 		name: '/* no comment */',
 		summary: 'No words needed',
-		description: '',
+		description:
+			"Some people say code should be self-documenting. But let's be real, if it were, we wouldn't have to spend half our time figuring out what our past selves were thinking. No comment indeed!",
 		categories: ['Programming'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'no-comment.svg',
 				url: '/no-comment.svg'
 			}
 		],
@@ -33,11 +35,12 @@ export const designs: Design[] = [
 		id: 'css-is-awesome',
 		name: 'CSS is awesome',
 		summary: 'Everyone loves CSS',
-		description: '',
+		description:
+			"They say CSS can contain anything - and they weren't kidding! This design demonstrates three fundamental CSS principles: 1) Everything is a box, 2) Overflow is inevitable (much like our love for CSS), and 3) No matter how hard you try, something will always break in unexpected ways. The 'awesome' is literally too awesome to be contained, much like how your layout will be too awesome to work in Internet Explorer. Bonus: If you squint, the overflow text represents the exact moment when you realize you need to support a new browser!",
 		categories: ['CSS'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'css-is-awesome.svg',
 				url: '/css-is-awesome.svg'
 			}
 		],
@@ -47,11 +50,12 @@ export const designs: Design[] = [
 		id: 'head-body',
 		name: 'Head and body',
 		summary: "HTML's Limbs",
-		description: '',
+		description:
+			"Witness the perfect HTML anatomy lesson! This sticker captures that magical moment when your document transitions from the cerebral <head> to the physical <body>. It's where all your meta thoughts and style contemplations finally manifest into something visible.",
 		categories: ['HTML'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'head-body.svg',
 				url: '/head-body.svg'
 			}
 		],
@@ -61,11 +65,12 @@ export const designs: Design[] = [
 		id: 'rm-rf',
 		name: 'rm -rf',
 		summary: 'Delete everything',
-		description: '',
+		description:
+			"Behold the most powerful two-letter combination in the Linux universe! This design captures the essence of that magical moment when you realize you've just recursively forced your way through your entire filesystem. It's the digital equivalent of yelling 'I quit!' at your computer. Warning: This design may cause sudden panic attacks, involuntary typing of Ctrl+C, and the overwhelming urge to check your backups. Remember, with great power comes great responsibility to double-check your current directory!",
 		categories: ['Linux'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'rm-rf.svg',
 				url: '/rm-rf.svg'
 			}
 		],
@@ -75,11 +80,12 @@ export const designs: Design[] = [
 		id: 'i-unicode',
 		name: 'I � unicode',
 		summary: 'How ironic..',
-		description: '',
+		description:
+			"This design perfectly captures the bittersweet relationship we all have with Unicode. One moment you're declaring your love for those beautiful characters that connect the world, and the next moment you're staring at a mysterious replacement character wondering what went wrong. It's the digital equivalent of a love letter that got lost in translation.",
 		categories: ['Unicode'],
 		downloads: [
 			{
-				name: 'svg',
+				name: 'i-unicode.svg',
 				url: '/i-unicode.svg'
 			}
 		],
