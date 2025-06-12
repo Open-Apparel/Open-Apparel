@@ -12,6 +12,9 @@ COPY svelte.config.js ./
 COPY tsconfig.json ./
 COPY vite.config.ts ./
 
+ARG PUBLIC_COMMIT_HASH
+ENV PUBLIC_COMMIT_HASH=${PUBLIC_COMMIT_HASH}
+
 ENV NODE_ENV=production
 RUN bun run build
 

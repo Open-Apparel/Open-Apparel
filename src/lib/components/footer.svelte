@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { PUBLIC_COMMIT_HASH } from '$env/static/public';
+</script>
+
 <footer class="bg-gray-800 py-12 text-white">
 	<div class="mx-auto max-w-6xl px-6">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -31,7 +35,6 @@
 				<h3 class="mb-4 text-lg font-semibold">Resources</h3>
 
 				<ul class="space-y-2 text-gray-400">
-					<!-- <li><a href="/" class="transition hover:text-white">Documentation</a></li> -->
 					<li>
 						<a
 							href="https://github.com/open-apparel/open-apparel"
@@ -60,10 +63,7 @@
 				© {new Date().getFullYear()} Open Apparel. All designs released under MIT license.
 			</p>
 
-			<!-- <div class="mt-4 flex space-x-6 text-gray-400 md:mt-0">
-				<a href="#" class="transition hover:text-white">Privacy Policy</a>
-				<a href="#" class="transition hover:text-white">Terms of Use</a>
-			</div> -->
+			<p class="text-gray-400">Version: {PUBLIC_COMMIT_HASH}</p>
 		</div>
 	</div>
 </footer>
