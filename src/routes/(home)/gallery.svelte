@@ -12,7 +12,7 @@
 			Browse our collection of free SVG designs for t-shirts, hoodies, and other apparel.
 		</p>
 
-		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" data-test-id="design-gallery">
 			{#each Object.entries(designs) as [id, design] (id)}
 				<DesignCard {design} />
 			{/each}
