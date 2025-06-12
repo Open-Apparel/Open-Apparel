@@ -12,9 +12,9 @@ COPY svelte.config.js ./
 COPY tsconfig.json ./
 COPY vite.config.ts ./
 
-ARG PUBLIC_COMMIT_HASH
-ENV PUBLIC_COMMIT_HASH=${PUBLIC_COMMIT_HASH}
+ARG COMMIT_HASH
 
+RUN sed -i "s/COMMIT_HASH: '.*'/COMMIT_HASH: '$COMMIT_HASH'/g" src/lib/environment.ts
 ENV NODE_ENV=production
 RUN bun run build
 

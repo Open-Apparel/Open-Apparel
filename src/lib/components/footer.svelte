@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_COMMIT_HASH } from '$env/static/public';
+	import { DATA } from '$lib/environment';
 </script>
 
 <footer class="bg-gray-800 py-12 text-white">
@@ -63,7 +63,7 @@
 				© {new Date().getFullYear()} Open Apparel. All designs released under MIT license.
 			</p>
 
-			<p class="text-gray-400">Version: {PUBLIC_COMMIT_HASH}</p>
+			<p class="text-gray-400">Version: {DATA.COMMIT_HASH}</p>
 		</div>
 	</div>
 </footer>
