@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { DATA } from '$lib/environment';
-</script>
-
 <footer class="bg-gray-800 py-12 text-white">
 	<div class="mx-auto max-w-6xl px-6">
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -62,8 +58,6 @@
 			<p class="text-gray-400">
 				© {new Date().getFullYear()} Open Apparel. All designs released under MIT license.
 			</p>
-
-			<p class="text-gray-400">Version: {DATA.COMMIT_HASH}</p>
 		</div>
 	</div>
 </footer>

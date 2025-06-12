@@ -92,4 +92,3 @@ jobs:
           file: ./Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.tag }}
-          build-args: COMMIT_HASH=${{ env.COMMIT_HASH }}
