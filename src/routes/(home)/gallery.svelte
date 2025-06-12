@@ -2,7 +2,7 @@
 	import DesignCard from '$lib/components/design-card.svelte';
 	import type { Design } from '$lib/types';
 
-	let { designs }: { designs: Design[] } = $props();
+	let { designs }: { designs: Record<string, Design> } = $props();
 </script>
 
 <section id="gallery" class="scroll-mt-24 bg-gray-100 py-16">
@@ -13,7 +13,7 @@
 		</p>
 
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-			{#each designs as design (design.id)}
+			{#each Object.entries(designs) as [id, design] (id)}
 				<DesignCard {design} />
 			{/each}
 		</div>

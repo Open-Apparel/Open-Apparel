@@ -1,8 +1,7 @@
 import type { Design } from './types';
 
-export const designs: Design[] = [
-	{
-		id: 'touch-grass',
+const rawDesigns = {
+	'touch-grass': {
 		name: '>touch grass',
 		summary: 'Internet culture × Linux enjoyers',
 		description:
@@ -16,8 +15,7 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	},
-	{
-		id: 'no-comment',
+	'no-comment': {
 		name: '/* no comment */',
 		summary: 'No words needed',
 		description:
@@ -31,8 +29,7 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	},
-	{
-		id: 'css-is-awesome',
+	'css-is-awesome': {
 		name: 'CSS is awesome',
 		summary: 'Everyone loves CSS',
 		description:
@@ -46,12 +43,11 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	},
-	{
-		id: 'head-body',
+	'head-body': {
 		name: 'Head and body',
 		summary: "HTML's Limbs",
 		description:
-			"Witness the perfect HTML anatomy lesson! This sticker captures that magical moment when your document transitions from the cerebral <head> to the physical <body>. It's where all your meta thoughts and style contemplations finally manifest into something visible.",
+			"Witness the perfect HTML anatomy lesson! This design captures that magical moment when your document transitions from the cerebral <head> to the physical <body>. It's where all your meta thoughts and style contemplations finally manifest into something visible.",
 		categories: ['HTML'],
 		downloads: [
 			{
@@ -61,8 +57,7 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	},
-	{
-		id: 'rm-rf',
+	'rm-rf': {
 		name: 'rm -rf',
 		summary: 'Delete everything',
 		description:
@@ -76,8 +71,7 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	},
-	{
-		id: 'i-unicode',
+	'i-unicode': {
 		name: 'I � unicode',
 		summary: 'How ironic..',
 		description:
@@ -91,4 +85,15 @@ export const designs: Design[] = [
 		],
 		pictures: []
 	}
-];
+} satisfies Record<string, Omit<Design, 'id'>>;
+
+export const designs: Record<keyof typeof rawDesigns, Design> = Object.entries(rawDesigns).reduce(
+	(acc, [id, design]) => {
+		acc[id] = {
+			id,
+			...design
+		};
+		return acc;
+	},
+	{}
+);
