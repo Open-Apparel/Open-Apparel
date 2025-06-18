@@ -16,3 +16,8 @@ test('designs page expected designs', async ({ page }) => {
 		0
 	);
 });
+
+test('design page has expected h1', async ({ page }) => {
+	await page.goto('/touch-grass');
+	await expect(page.locator('h1')).toBeVisible();
+});

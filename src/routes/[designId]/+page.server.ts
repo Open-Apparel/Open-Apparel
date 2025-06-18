@@ -4,7 +4,7 @@ import type { PageServerLoad } from './$types';
 
 export const load = (async ({ params }) => {
 	const { designId } = params;
-	const design = designs.find((d) => d.id === designId);
+	const design = designId in designs ? designs[designId as keyof typeof designs] : null;
 
 	if (!design) {
 		redirect(307, '/');
