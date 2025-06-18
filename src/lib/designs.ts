@@ -84,16 +84,30 @@ const rawDesigns = {
 			}
 		],
 		pictures: []
+	},
+	'im-not-a-robot': {
+		name: "I'm not a robot",
+		summary: 'The human race is back',
+		description:
+			"This design perfectly captures the eternal struggle of modern humanity - proving we're not robots by failing to check a simple box. It represents that moment of hesitation where you wonder: 'If I check this box, does that make me more or less human?' The unchecked state symbolizes our collective resistance to automated verification systems, or perhaps we just forgot to click it. Warning: May cause sudden urges to question your own humanity, debate the nature of consciousness, or frantically refresh the page when the CAPTCHA inevitably fails.",
+		categories: ['AI'],
+		downloads: [
+			{
+				name: 'im-not-a-robot.svg',
+				url: '/im-not-a-robot.svg'
+			}
+		],
+		pictures: []
 	}
 } satisfies Record<string, Omit<Design, 'id'>>;
 
-export const designs: Record<keyof typeof rawDesigns, Design> = Object.entries(rawDesigns).reduce(
+export const designs = Object.entries(rawDesigns).reduce(
 	(acc, [id, design]) => {
-		acc[id] = {
+		acc[id as keyof typeof rawDesigns] = {
 			id,
 			...design
 		};
 		return acc;
 	},
-	{}
+	{} as Record<keyof typeof rawDesigns, Design>
 );

@@ -11,7 +11,7 @@
 
 <div class="container mx-auto">
 	<div class="grid gap-4 px-6 py-8 md:grid-cols-3 md:py-16">
-		<div class="col-span-2 aspect-video rounded-lg bg-neutral-300">
+		<div class="aspect-video w-full rounded-lg bg-neutral-300 md:col-span-2">
 			<!-- <img class="size-full object-cover" src={data.design.pictures[0]} alt={data.design.name} /> -->
 			<img
 				class="size-full object-contain p-16"
@@ -20,8 +20,8 @@
 			/>
 		</div>
 
-		<div class="grid place-items-center rounded-lg bg-neutral-300">
-			<p class="text-center text-sm text-neutral-500">
+		<div class="grid w-full place-items-center rounded-lg bg-neutral-300">
+			<p class="w-full p-8 text-center text-sm text-neutral-500">
 				We'd place some images of this design here, <br /> if there were any ¯\_(ツ)_/¯
 			</p>
 		</div>
