@@ -98,6 +98,20 @@ const rawDesigns = {
 			}
 		],
 		pictures: []
+	},
+	databreach: {
+		name: 'Decentralized backup',
+		summary: 'When your data gets more travel miles than you do',
+		description:
+			"This design illustrates the cutting-edge concept of 'distributed data management' - or as some might call it, 'accidental decentralization'. It perfectly captures that moment when your sensitive information decides to go on a world tour without your permission. Who needs cloud storage when you can have your data conveniently scattered across various unknown servers worldwide?",
+		categories: ['Hacking'],
+		downloads: [
+			{
+				name: 'databreach.svg',
+				url: '/databreach.svg'
+			}
+		],
+		pictures: []
 	}
 } satisfies Record<string, Omit<Design, 'id'>>;
 
