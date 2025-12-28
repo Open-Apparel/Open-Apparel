@@ -1,34 +1,18 @@
 <script lang="ts">
-	import '@fontsource-variable/inter';
-	import '../app.css';
+	import favicon from '$lib/assets/logo.svg';
 
-	import { page } from '$app/state';
-	import { fade } from 'svelte/transition';
+	import '@fontsource-variable/jetbrains-mono';
+	import '@fontsource-variable/platypi';
 
-	import Footer from '$lib/components/footer.svelte';
-	import Navigation from '$lib/components/navigation.svelte';
+	import './layout.css';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<meta
-		name="description"
-		content="Open Apparel is a free and open-source library of SVG designs for t-shirts and clothing that you can freely use to create custom apparel."
-	/>
-	<meta name="theme-color" content="#9810fa" />
+	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<main class="flex h-full min-h-dvh flex-col justify-between">
-	<div>
-		<Navigation />
-
-		{#key page.url}
-			<div in:fade={{ duration: 250 }}>
-				{@render children?.()}
-			</div>
-		{/key}
-	</div>
-
-	<Footer />
-</main>
+<div class="min-h-dvh bg-neutral-50 text-neutral-950">
+	{@render children()}
+</div>

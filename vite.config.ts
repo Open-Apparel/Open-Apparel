@@ -1,16 +1,5 @@
-import svg from '@poppanator/sveltekit-svg';
-import { sveltekit } from '@sveltejs/kit/vite';
 import tailwindcss from '@tailwindcss/vite';
-import Icons from 'unplugin-icons/vite';
+import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-	plugins: [
-		tailwindcss(),
-		sveltekit(),
-		Icons({
-			compiler: 'svelte'
-		}),
-		svg()
-	]
-});
+export default defineConfig({ plugins: [tailwindcss(), sveltekit()] });

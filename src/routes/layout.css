@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-platypi: 'Platypi Variable', serif;
+}
+
+body {
+	font-family: 'JetBrains Mono Variable', monospace;
+}

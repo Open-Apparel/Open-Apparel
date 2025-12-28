@@ -1,29 +1,27 @@
-FROM oven/bun AS base
-WORKDIR /usr/src/app
+FROM node:20-slim AS base
 
-FROM base AS builder
+ENV CI=true
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 
-COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile
+RUN corepack enable
 
-COPY src src
-COPY static static
-COPY svelte.config.js ./
-COPY tsconfig.json ./
-COPY vite.config.ts ./
+COPY . /app
+WORKDIR /app
 
-ENV NODE_ENV=production
-RUN bun run build
+FROM base AS prod-deps
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
 
-FROM base
+FROM base AS build
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN pnpm run build
 
-COPY --from=builder /usr/src/app/build ./build
+FROM base AS runner
 
 RUN apt update && apt install curl -y
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:3000 || exit 1
 
+EXPOSE 3000
 LABEL org.opencontainers.image.source=https://github.com/open-apparel/open-apparel
 
-USER bun
-EXPOSE 3000/tcp
-ENTRYPOINT [ "bun", "build/index.js" ]
+CMD ["node", "build"]

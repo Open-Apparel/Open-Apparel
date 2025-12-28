@@ -1,0 +1,15 @@
+<svg width="95mm" height="135mm" viewBox="0 0 95 135" version="1.1" id="svg1" inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)" sodipodi:docname="open-apparel-logo.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.71090067" inkscape:cx="179.34995" inkscape:cy="256.01326" inkscape:window-width="1920" inkscape:window-height="1005" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="layer1"/>
+  <defs id="defs1">
+    <inkscape:path-effect effect="fillet_chamfer" id="path-effect7" is_visible="true" lpeversion="1" nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,25.770677,0,1 @ F,0,0,1,0,25.770677,0,1" radius="0" unit="px" method="auto" mode="F" chamfer_steps="1" flexible="false" use_knot_distance="true" apply_no_radius="true" apply_with_radius="true" only_selected="false" hide_knots="false"/>
+    <inkscape:path-effect effect="fillet_chamfer" id="path-effect6" is_visible="true" lpeversion="1" nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1" radius="0" unit="px" method="auto" mode="F" chamfer_steps="1" flexible="false" use_knot_distance="true" apply_no_radius="true" apply_with_radius="true" only_selected="false" hide_knots="false"/>
+    <linearGradient id="linearGradient5" inkscape:collect="always">
+      <stop style="stop-color:#615fff;stop-opacity:1;" offset="0" id="stop5"/>
+      <stop style="stop-color:#9810fa;stop-opacity:1;" offset="1" id="stop6"/>
+    </linearGradient>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient5" id="linearGradient6" x1="106.44361" y1="84.484962" x2="106.44361" y2="213.63158" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-57.5,-81)">
+    <path id="rect1" d="m 65,88.5 h 80 v 94.22932 A 25.770677,25.770677 135 0 1 119.22932,208.5 H 90.770677 A 25.770677,25.770677 45 0 1 65,182.72932 Z" style="opacity:1;mix-blend-mode:normal;fill:none;fill-opacity:1;stroke:url(#linearGradient6);stroke-width:15;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" inkscape:path-effect="#path-effect7" inkscape:original-d="m 65,88.5 h 80 v 120 H 65 Z"/>
+  </g>
+</svg>

@@ -3,6 +3,14 @@ export interface Download {
 	url: string;
 }
 
+export interface Author {
+	name: string;
+	link?: {
+		display: string;
+		url: string;
+	};
+}
+
 export interface Design {
 	id: string;
 	name: string;
@@ -11,4 +19,5 @@ export interface Design {
 	categories: string[];
 	downloads: Download[];
 	pictures: string[];
+	authors?: Author[];
 }

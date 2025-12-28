@@ -1,3 +1,4 @@
+import { AUTHORS } from './authors';
 import type { Design } from './types';
 
 const rawDesigns = {
@@ -13,7 +14,8 @@ const rawDesigns = {
 				url: '/touch-grass.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'no-comment': {
 		name: '/* no comment */',
@@ -27,7 +29,8 @@ const rawDesigns = {
 				url: '/no-comment.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'css-is-awesome': {
 		name: 'CSS is awesome',
@@ -41,7 +44,8 @@ const rawDesigns = {
 				url: '/css-is-awesome.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'head-body': {
 		name: 'Head and body',
@@ -55,10 +59,11 @@ const rawDesigns = {
 				url: '/head-body.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'rm-rf': {
-		name: 'rm -rf',
+		name: 'rm -rf /',
 		summary: 'Delete everything',
 		description:
 			"Behold the most powerful two-letter combination in the Linux universe! This design captures the essence of that magical moment when you realize you've just recursively forced your way through your entire filesystem. It's the digital equivalent of yelling 'I quit!' at your computer. Warning: This design may cause sudden panic attacks, involuntary typing of Ctrl+C, and the overwhelming urge to check your backups. Remember, with great power comes great responsibility to double-check your current directory!",
@@ -69,7 +74,8 @@ const rawDesigns = {
 				url: '/rm-rf.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'i-unicode': {
 		name: 'I � unicode',
@@ -83,7 +89,8 @@ const rawDesigns = {
 				url: '/i-unicode.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	'im-not-a-robot': {
 		name: "I'm not a robot",
@@ -97,7 +104,8 @@ const rawDesigns = {
 				url: '/im-not-a-robot.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	},
 	databreach: {
 		name: 'Decentralized backup',
@@ -111,7 +119,8 @@ const rawDesigns = {
 				url: '/databreach.svg'
 			}
 		],
-		pictures: []
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	}
 } satisfies Record<string, Omit<Design, 'id'>>;
 
