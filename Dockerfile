@@ -18,6 +18,9 @@ RUN pnpm run build
 
 FROM base AS runner
 
+WORKDIR /app
+COPY --from=build /app/build build
+
 RUN apt update && apt install curl -y
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:3000 || exit 1
 
