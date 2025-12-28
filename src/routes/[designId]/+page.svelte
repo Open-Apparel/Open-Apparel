@@ -1,4 +1,6 @@
 <script lang="ts">
+	/* eslint svelte/no-navigation-without-resolve: "off" */
+
 	import Navigation from '$lib/components/navigation.svelte';
 	import ChevronDown from '@lucide/svelte/icons/chevron-down';
 
