@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.design.name}</title>
+	<title>{data.design.name} | Open Apparel</title>
 </svelte:head>
 
 <div class="relative flex flex-col items-center justify-center gap-8 p-8 md:gap-16 md:py-16">
