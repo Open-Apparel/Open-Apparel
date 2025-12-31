@@ -46,7 +46,6 @@ const rawDesigns = {
 	},
 	'head-body': {
 		name: 'Head and body',
-		summary: "HTML's Limbs",
 		description:
 			"Witness the perfect HTML anatomy lesson! This design captures that magical moment when your document transitions from the cerebral <head> to the physical <body>. It's where all your meta thoughts and style contemplations finally manifest into something visible.",
 		categories: ['HTML'],
