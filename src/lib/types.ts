@@ -14,7 +14,6 @@ export interface Author {
 export interface Design {
 	id: string;
 	name: string;
-	summary: string;
 	description: string;
 	categories: string[];
 	downloads: Download[];
