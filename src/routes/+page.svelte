@@ -5,7 +5,7 @@
 	import Fuse from 'fuse.js';
 
 	const fuse = new Fuse(Object.values(designs), {
-		keys: ['name', 'categories'],
+		keys: ['name'],
 		threshold: 0.8
 	});
 

@@ -15,7 +15,6 @@ export interface Design {
 	id: string;
 	name: string;
 	description: string;
-	categories: string[];
 	downloads: Download[];
 	pictures: string[];
 	authors?: Author[];
