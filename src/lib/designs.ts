@@ -157,6 +157,18 @@ const rawDesigns = {
 		],
 		pictures: [],
 		authors: [AUTHORS.borisnl]
+	},
+	'failed-encryption': {
+		name: 'Failed encryption',
+		description: 'There was an attempt, but it has clearly failed.',
+		downloads: [
+			{
+				name: 'failed-encryption.svg',
+				url: '/failed-encryption.svg'
+			}
+		],
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	}
 } satisfies Record<string, Omit<Design, 'id'>>;
 
