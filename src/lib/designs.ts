@@ -144,6 +144,19 @@ const rawDesigns = {
 		],
 		pictures: [],
 		authors: [AUTHORS.borisnl]
+	},
+	'object-object': {
+		name: '[object Object]',
+		description:
+			"Every developer's worst nightmare: an error message that tells you exactly nothing.",
+		downloads: [
+			{
+				name: 'object-object.svg',
+				url: '/object-object.svg'
+			}
+		],
+		pictures: [],
+		authors: [AUTHORS.borisnl]
 	}
 } satisfies Record<string, Omit<Design, 'id'>>;
 

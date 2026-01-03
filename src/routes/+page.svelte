@@ -11,7 +11,7 @@
 
 	let search = $state('');
 	let filteredDesigns = $derived(
-		search.length > 0 ? fuse.search(search).map((d) => d.item) : Object.values(designs)
+		search.length > 0 ? fuse.search(search).map((d) => d.item) : Object.values(designs).reverse()
 	);
 </script>
 

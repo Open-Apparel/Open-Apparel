@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Usage | Open Apparel</title>
+	<title>Usage « Open Apparel</title>
 </svelte:head>
 
 <div class="relative flex flex-col items-center justify-center gap-8 p-8 md:gap-16 md:py-16">
